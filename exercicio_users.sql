@@ -13,8 +13,6 @@ show grants for analista;
 --      USUÁRIO GESTOR
 
 create user gestor identified by 'senha_Gestor_!124';
-grant select on academia.* to gestor;
-grant insert on academia.* to gestor;
-grant update on academia.* to gestor;
+grant select, insert, update on academia.* to gestor;
 
 show grants for gestor;
